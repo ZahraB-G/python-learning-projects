@@ -1,0 +1,15 @@
+# Insert data into Transactions table
+import sqlite3
+connection = sqlite3.connect('./mini_projects/bank_database/bank.db')
+cursor = connection.cursor()
+cursor.execute('INSERT INTO Transactions VALUES(1, 101, "deposit", 500.0 , "2025-07-04")')
+cursor.execute('INSERT INTO Transactions VALUES(2, 102, "withdrawal", 100.5,"2025-07-05")')
+cursor.execute('INSERT INTO Transactions VALUES(3, 103, "deposit", 300.0,"2025-07-06")')
+cursor.execute('INSERT INTO Transactions VALUES(4, 104, "withdrawal",200.0,"2025-07-09" )')
+cursor.execute('INSERT INTO Transactions VALUES(5, 102, "deposit", 500.0 , "2025-07-12")')
+cursor.execute('INSERT INTO Transactions VALUES(6, 103, "withdrawal", 100.5,"2025-07-20")')
+cursor.execute('INSERT INTO Transactions VALUES(7, 104, "deposit", 300.0,"2025-08-06")')
+cursor.execute('INSERT INTO Transactions VALUES(8, 104, "withdrawal",200.0,"2025-09-09" )')
+connection.commit()
+cursor.close()
+connection.close()
