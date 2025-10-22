@@ -1,6 +1,6 @@
 # Find 'Civil' Department Students not from 'NY'
 import sqlite3
-connection = sqlite3.connect('university.db')
+connection = sqlite3.connect('./sqlite3/university.db')
 cursor = connection.cursor()
 rows = cursor.execute('SELECT name FROM students WHERE deptno in(SELECT deptno FROM department WHERE deptname = "Civil") and city = "NY"')
 tuples = rows.fetchall()

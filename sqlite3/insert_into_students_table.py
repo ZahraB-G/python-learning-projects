@@ -1,6 +1,6 @@
 # Insert to student table via the keyboard
 import sqlite3
-connection = sqlite3.connect('university.db')
+connection = sqlite3.connect('./sqlite3/university.db')
 cursor = connection.cursor()
 
 for i in range(10):

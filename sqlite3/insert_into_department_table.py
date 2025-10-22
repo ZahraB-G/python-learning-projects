@@ -1,6 +1,6 @@
 # Insert the hardcoded info into the department name
 import sqlite3
-connection = sqlite3.connect('university.db')
+connection = sqlite3.connect('./sqlite3/university.db')
 cursor = connection.cursor()
 cursor.execute('INSERT INTO department values(10, "CSE")')
 cursor.execute('INSERT INTO department values(20, "ECE")')

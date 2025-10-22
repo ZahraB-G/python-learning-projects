@@ -1,6 +1,6 @@
 # Find all the cities where Students are living.
 import sqlite3
-connection = sqlite3.connect('university.db')
+connection = sqlite3.connect('./sqlite3/university.db')
 cursor = connection.cursor()
 rows = cursor.execute('SELECT DISTINCT CITY FROM STUDENTS')     
 tuples = rows.fetchall()

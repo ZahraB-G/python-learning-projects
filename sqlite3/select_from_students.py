@@ -1,6 +1,6 @@
 # Show the values in the students table
 import sqlite3
-connection = sqlite3.connect('university.db')
+connection = sqlite3.connect('./sqlite3/university.db')
 cursor = connection.cursor()
 rows = cursor.execute('SELECT * FROM students')
 

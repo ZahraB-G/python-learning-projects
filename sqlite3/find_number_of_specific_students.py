@@ -1,6 +1,6 @@
 # Find number of 'ECE' Students residing in each city
 import sqlite3
-connection = sqlite3.connect('university.db')
+connection = sqlite3.connect('./sqlite3/university.db')
 cursor = connection.cursor()
 rows = cursor.execute('SELECT city, COUNT(*)  FROM students WHERE deptno in (SELECT deptno FROM department WHERE deptname = "ECE") GROUP BY city ORDER BY COUNT(*)')
 tuples = rows.fetchall()

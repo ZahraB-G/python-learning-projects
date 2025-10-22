@@ -1,7 +1,7 @@
 # Update Department name to "IT" for deptno 50
 # Delete Department 50
 import sqlite3
-connection = sqlite3.connect('university.db')
+connection = sqlite3.connect('./sqlite3/university.db')
 cursor = connection.cursor()
 
 # Update the department name
