@@ -20,9 +20,7 @@ def search_entries(data):
 
 
       
-
-option = 0
-while option != 4:
+while True:
     print('==== File Journal Menu ====')
     print('1. Add Entry\n2. Read All Entries\n3. Search Entries\n4. Exit\n===========')
     option = int(input('Choose option (1-4):'))
@@ -35,5 +33,8 @@ while option != 4:
     elif option == 3:
         data = input('Enter the keyword')
         search_entries(data)
-else:
-    print('Thank you for your time!')
+    elif option == 4:
+        print('Thank you for your time')
+        break
+    else:
+        print('Invalid Option!!!!')
