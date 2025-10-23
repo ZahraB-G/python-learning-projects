@@ -3,4 +3,8 @@ Installed Python and ran my first "Hello World!" script.
 Practiced creating variables and printing user input.
 Wrote basic if-else statement and used loops for the first time.
 Fixed indentation errors in my code and learned why they matter.
-Created simple functions to reuse code more easily.
+Created simple functions to reuse code more easily.Hi everyone
+Hello
+TEST
+Hello
+TEST
