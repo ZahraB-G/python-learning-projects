@@ -1,0 +1,2 @@
+This section has been attached to the file via write_file.py
+This is added to the file by append_file.py
