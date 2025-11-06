@@ -17,3 +17,15 @@ print('=========================================================================
 # Aggregate Functions: reduces a set of values into a single summary value
 # Used to summarized and analyze data
 # Often used with the groupby() function
+# Use aggregative function on whole dataframe
+print('Show all the average numeric values\n',richest.mean(numeric_only=True))
+print('Show all the min numeric values\n',richest.min(numeric_only=True))
+print('Show all the max numeric values\n',richest.max(numeric_only=True))
+print('==================================================================================')
+# Use aggregate functions on one column
+print('Show the average age\n',richest['age'].mean())
+print('Show the youngest \n',richest['age'].min())
+print('Show the oldest \n',richest['age'].max())
+print('==================================================================================')
+group = richest.groupby('nationality')
+print(group['age'].mean())
