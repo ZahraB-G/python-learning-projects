@@ -1,6 +1,6 @@
 import pandas as pd
 cols = ['Series_Title', 'IMDB_Rating', 'No_of_Votes','Gross','Released_Year', 'Genre']
-movies = pd.read_csv('advanced/pandas/imdb_top_1000.csv',usecols=cols)
+movies = pd.read_csv('data_science_basics/pandas/imdb_top_1000.csv',usecols=cols)
 # Find the lowest scored movie with the lowest amount of votes
 print('The lowest scored movie with the lowest amount of votes is\n',movies.nsmallest(n=1,columns=['IMDB_Rating','No_of_Votes']))
 # Find the highest scored movie with the highest amount of votes

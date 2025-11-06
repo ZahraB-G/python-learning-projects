@@ -9,6 +9,7 @@ print('===========================================')
 # Accessing data in dataframe
 print('Access the information for the Employee 1\n',df.loc['Employee 1'])
 print('Access the information for the Employee 2\n',df.iloc[2])
+print('Accessing all the names \n',df['Name'])
 print('===========================================')
 # Adding new column
 df['Job'] = ['Consultant','Designer','Accountant']
