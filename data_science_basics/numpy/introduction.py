@@ -58,8 +58,15 @@ print('Shape of second array',arr2.shape)
 print('Broadcastinf first array into second array\n',arr1*arr2)
 print('================================')
 # Aggregative functions = summarize data and typically return a single value
-
+arr = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(f'Sum of all the elements of {arr} is {np.sum(arr)}')
+print(f'Average of {arr} is {np.mean(arr)}')
 print('================================')
-
+# Filtering: refers to the process of selecting elements from an array that match a given condition
+ages = np.array([[34,23,15,14,56],[20,18,13,15,76]])
+teenagers = ages[ages<18]
+print('Print all the teenagers\n',teenagers)
+nrg = np.random.default_rng()
+print('Print a random number ',nrg.integers(low=1,high=7,size=(3,2)))
 
 
