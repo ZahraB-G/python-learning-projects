@@ -48,3 +48,22 @@ plt.plot(x,y)
 plt.show()
 ################################################
 # Bar Chart = compare categories of data by reperesenting each categor with a bar
+categoies = np.array(['Grains', 'Fruit', 'Vegetables', 'Protein', 'Dairy', 'Sweets'])
+values = np.array([100, 200, 300, 100, 299,129])
+plt.bar(categoies, values, color='skyblue')
+plt.title('Daily Consumption')
+plt.xlabel('Food')
+plt.ylabel('Quantity')
+plt.show()
+################################################
+# Pie chart = circular chart divided into slices to show percentages of the total.
+# Good for visualizing distribution among categories.
+# explote attribute give a distance to the specific pie part
+categoies = ['Freshmen','Sophomores', 'Juniors','Seniors']
+values = np.array([300,250,275,225])
+colors = ['red','yellow','blue','green']
+plt.pie(values,labels=categoies,autopct='%1.1f%%',colors=colors,explode=[0,0,0,0.1])
+plt.title('Code College')
+plt.show()
+################################################
+################################################
